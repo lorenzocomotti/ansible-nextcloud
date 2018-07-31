@@ -1,0 +1,24 @@
+---
+package:
+  nextcloud:
+    installed: true
+port:
+  tcp:443:
+    listening: true
+    ip:
+      - 0.0.0.0
+service:
+  nextcloud:
+    enabled: true
+    running: true
+user:
+  nextcloud:
+    exists: true
+    groups:
+      - nextcloud
+group:
+  nextcloud:
+    exists: true
+process:
+  nextcloud:
+    running: true

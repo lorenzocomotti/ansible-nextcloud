@@ -1,2 +1,4 @@
 ---
 # defaults vars
+nextcloud_data_dir: "/var/ncdata"
+nextcloud_websrv: "nginx"

@@ -21,7 +21,7 @@ Run with default vars:
 ```
 ---
 
-- name: run the main role
+- name: Run the main role
   hosts: all
   become: yes
   become_method: sudo

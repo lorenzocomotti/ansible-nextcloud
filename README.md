@@ -18,9 +18,34 @@ The role defines most of its variables in `defaults/main.yml`:
 
 Run with default vars:
 
-    - hosts: all
-      roles:
-        - { role: ansible-nextcloud }
+```
+---
+
+- name: run the main role
+  hosts: all
+  become: yes
+  become_method: sudo
+  become_user: root
+  roles:
+    - role: ansible-nextcloud
+      nextcloud_websrv: nginx
+      nextcloud_install_redis_server: true
+      nextcloud_redis_settings:
+        - { name: 'memcache.locking', value: '\OC\Memcache\Redis' }
+        - { name: 'redis host', value: 'localhost' }
+        - { name: 'redis port', value: '6379'}
+      nextcloud_background_cron: True
+      nextcloud_data_dir: "/var/ncdata"
+      nextcloud_webroot: "/var/www/nextcloud/"
+      nextcloud_admin_name: "admin"
+      nextcloud_admin_pwd: "<your-password>"
+      nextcloud_mysql_root_pwd: "<your-password>"
+      nextcloud_db_name: "nextcloud"
+      nextcloud_db_admin: "admin"
+      nextcloud_db_pwd: "<your-password>"
+      nextcloud_trusted_domain:
+        - "my-domain.com"
+```
 
 ## Testing
 

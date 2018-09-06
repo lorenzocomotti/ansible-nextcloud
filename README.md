@@ -1,7 +1,7 @@
 Ansible Role: nextcloud 
 ======================================
 
-[![Build Status](https://travis-ci.org/entercloudsuite/ansible-nextcloud.svg?branch=master)](https://travis-ci.org/entercloudsuite/ansible-nextcloud)
+[![Build Status](https://travis-ci.org/lorenzocomotti/ansible-nextcloud.svg?branch=master)](https://travis-ci.org/lorenzocomotti/ansible-nextcloud)
 [![Galaxy](https://img.shields.io/badge/galaxy-entercloudsuite.nextcloud-blue.svg?style=flat-square)](https://galaxy.ansible.com/entercloudsuite/nextcloud)  
 
 Installs nextcloud on Ubuntu 16.04 (Xenial)

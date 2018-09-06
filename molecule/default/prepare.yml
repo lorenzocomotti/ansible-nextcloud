@@ -36,4 +36,3 @@
           mount_options: defaults
           mount: "/var/lib/mysql"
           disable_periodic_fsck: false
-

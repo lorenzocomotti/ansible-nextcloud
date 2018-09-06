@@ -13,4 +13,4 @@ galaxy_info:
     - molecule
 
 dependencies:
-  - {role: aalaesar.install_nextcloud , version: v1.3.2}
+  - {role: aalaesar.install_nextcloud,version: v1.3.2}
